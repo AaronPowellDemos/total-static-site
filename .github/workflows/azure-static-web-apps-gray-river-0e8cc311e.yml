@@ -19,6 +19,7 @@ jobs:
     - uses: actions/checkout@v2
     - run: |
         printenv
+        cat $GITHUB_EVENT_PATH
     - name: Build And Deploy
       id: builddeploy
       uses: Azure/static-web-apps-deploy@v0.0.1-preview
